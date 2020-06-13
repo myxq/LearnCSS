@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* 伪类 */
+			a:link{
+				color: black;
+			}
+			a:visited{
+				color: blue;
+			}
+			a:hover{
+				color: red;
+			}
+			
+			/* 鼠标悬停，图片显示边框 */
+			.demo img{
+				border:1px solid transparent;
+			}
+			.demo img:hover{
+				border: 1px red solid;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">新闻</a>
+		<br />
+		<div>
+			<a href="01.html" title="1" target="_blank">01</link><br />
+			<a href="test.html" title="test" target="_blank">test</link>
+		</div>
+		
+		<div class="demo">
+			<img src="b.jpg" />
+		</div>
+		
+	</body>
+</html>

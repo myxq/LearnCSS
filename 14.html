@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box{
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: space-between;
+				align-items: flex-end;
+				flex-wrap: wrap;
+				width: 18.75rem;
+				height: 12.5rem;
+				background-color: #eee;
+			}
+			
+			.innerbox{
+				flex-basis: 10%;
+				height: 40%;
+			}
+			
+			.innerbox:nth-child(1){
+				background: #ff55ff;
+				/* font-size: 20px; */
+				/* height: 50px; */
+			}
+			.innerbox:nth-child(2){
+				background: #55ff7f;
+				/* font-size: 30px; */
+				/* height: 80px; */
+			}
+			.innerbox:nth-child(3){
+				background: #aa557f;
+				/* font-size: 40px; */
+				/* height: 110px; */
+			}
+			.innerbox:nth-child(4){
+				background: #dd00f7;
+				/* font-size: 50px; */
+				/* height: 140px; */
+			}
+			.innerbox:nth-child(5){
+				background: #EE9900;
+				/* font-size: 60px; */
+				/* height: 170px; */
+			}
+			.container{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;				
+				flex-wrap: wrap;				
+				align-items: center;
+				width: 13rem;
+				height: 18.75rem;
+				background-color: skyblue;
+			}
+			.content{
+				flex-basis: 20%;
+				height: 13%;
+				border: 1px red solid;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>flex-flow示例</h1>
+		<div class="box">
+			<div class="innerbox">a</div>
+			<div class="innerbox">b</div>
+			<div class="innerbox">c</div>
+			<div class="innerbox">d</div>
+			<div class="innerbox">e</div>
+		</div><br />
+		<div class="container">
+			<div class="content">1</div>
+			<div class="content">2</div>
+			<div class="content">3</div>
+			<div class="content">4</div>
+			<div class="content">5</div>
+			<div class="content">6</div>
+			<div class="content">7</div>
+			<div class="content">8</div>
+			<div class="content">9</div>
+			<div class="content">10</div>
+			<div class="content">11</div>
+			<div class="content">12</div>
+		</div>
+	</body>
+</html>
